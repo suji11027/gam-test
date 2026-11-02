@@ -74,6 +74,13 @@ SOURCES: list[tuple[str, str, str]] = [
      "https://ourworldindata.org/grapher/life-expectancy.csv"
      "?csvType=full&useColumnShortNames=true"),
 
+    # 기간(1993~2022)은 받은 뒤에 자른다. time=1993..2022 로 받으면 나라마다 양 끝 해만
+    # 남고, 그 해에 조사가 없으면 다른 해 값을 끌어다 채운다(happy__original_year).
+    ("happiness.csv",
+     "행복하다고 답한 사람 비율 (Our World in Data)",
+     "https://ourworldindata.org/grapher/share-of-people-who-say-they-are-happy.csv"
+     "?csvType=full&useColumnShortNames=true"),
+
     ("wb_fertility.json",
      "합계출산율 전세계 (World Bank SP.DYN.TFRT.IN)",
      "https://api.worldbank.org/v2/country/all/indicator/SP.DYN.TFRT.IN"

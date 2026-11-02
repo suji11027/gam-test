@@ -127,6 +127,13 @@
       "title": "얼마나 오래 사나",
       "blurb": "나라별 기대수명 1950~현재",
       "source": "Our World in Data"
+    },
+    {
+      "id": "happiness",
+      "emoji": "😊",
+      "title": "한국인은 얼마나 행복한가",
+      "blurb": "나라별 '행복하다'고 답한 사람의 비율",
+      "source": "Our World in Data"
     }
   ]
 }
